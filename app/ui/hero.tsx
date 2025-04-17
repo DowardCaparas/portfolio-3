@@ -13,7 +13,7 @@ const Hero = () => {
         Learning the craft. Creating with love.
       </span>
       <h1 className="xl:text-6xl md:text-5xl sm:text-4xl text-2xl font-bold xl:leading-18">
-        I'm Doward Caparas Aspiring
+        I&apos;m Doward Caparas Aspiring
         <br />
         Full-Stack Web Developer
       </h1>
