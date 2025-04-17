@@ -3,11 +3,11 @@ import Link from "next/link";
 const Hero = () => {
   return (
     <div
-      className="w-full flex flex-col gap-8 justify-center items-center 
+      className="w-full flex flex-col gap-10 justify-center items-center 
     h-full text-center max-md:p-5 mt-32 z-10"
     >
       <span
-        className="text-[#B99AFA] font-medium border-t border-[#4D3873] 
+        className="text-[#ffffff] font-medium border-t border-[#3e9654] 
       rounded-full py-2 px-6 text-sm"
       >
         Learning the craft. Creating with love.
@@ -17,15 +17,15 @@ const Hero = () => {
         <br />
         Full-Stack Web Developer
       </h1>
-      <p className="text-lg text-[#918EA0] lg:w-[40%] md:w-[60%] w-[90%] font-medium">
+      <p className="text-lg text-[#c5d3ce] lg:w-[40%] md:w-[60%] w-[90%] font-medium">
         I build responsive, full-stack web apps with clean code and real-world
         functionality. I&apos;m passionate about learning, problem-solving, and
         bringing ideas to life through code.
       </p>
       <Link
         href="/about"
-        className="rounded-lg py-3 px-8 bg-linear-to-b from-[#9463E8] to-[#6229c4]
-        hover:opacity-80 transition duration-300 ease-in font-semibold"
+        className="rounded-lg py-3 px-8 bg-linear-to-b from-[#63e8a6] to-[#29c483]
+        hover:opacity-80 active:scale-95 transition duration-300 ease-in font-semibold text-black"
       >
         About me
       </Link>

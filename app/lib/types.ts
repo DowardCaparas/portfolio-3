@@ -13,3 +13,11 @@ export type RedirectButtonTypes = {
   label: string;
   image: string;
 };
+
+export type TechnicalSkills = {
+  category: string;
+  skills: {
+    name: string;
+    icon: string;
+  }[];
+}

@@ -31,7 +31,7 @@ const NavBar = () => {
           }`}
       >
         <Link href="/" className="flex items-center gap-2">
-          <span className="font-bold text-3xl text-violet-500">{code}</span>
+          <span className="font-bold text-3xl text-[#08B876]">{code}</span>
           <span className="font-semibold text-2xl">Doward</span>
         </Link>
         <div className="flex items-center gap-6 text-sm font-medium text-white max-md:hidden">
