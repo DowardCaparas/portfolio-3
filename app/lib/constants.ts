@@ -13,10 +13,6 @@ export const navLinks = [
     label: "Projects",
     url: "/projects",
   },
-  {
-    label: "Certificates",
-    url: "/certificates",
-  },
 ];
 
 // Projects
@@ -236,18 +232,6 @@ export const socials = [
     url: "https://www.hackerrank.com/profile/dounhuward_c",
     icon: "/hackerrank.svg",
   },
-];
-
-export const skills = [
-  "Proficiency in JavaScript (ES6+) and TypeScript",
-  "Experienced with React.js and Next.js for building static and dynamic websites",
-  "Skilled in responsive design with Tailwind CSS for all screen sizes",
-  "Experienced with static and dynamic rendering",
-  "Good understanding of SEO principles",
-  "Comfortable with Git and GitHub for version control",
-  "Experienced in fetching data from a SQL PostgreSQL database",
-  "Experienced in fetching data from an API",
-  "Strong understanding of the DOM and its manipulation",
 ];
 
 export const accomplishments = [

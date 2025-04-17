@@ -27,7 +27,7 @@ const About = () => {
           </div>
         </div>
         {/* Details */}
-        <div className="col-span-2">
+        <div className="col-span-2 max-md:mt-10">
          <div className="flex flex-col max-md:text-center max-md:items-center">
          <div className="inline-grid space-y-2 mb-6">
             <h1 className="font-bold lg:text-6xl md:text-5xl text-4xl">Doward Caparas</h1>
@@ -126,6 +126,15 @@ const About = () => {
                   <span className="text-[#acacac]">Sep 2019 - Feb 2024</span>
                   <span>GPA: 1.63</span>
                 </div>
+              </div>
+            </>
+            {/* Certification */}
+            <>
+              <h3 className="lg:text-4xl md:text-3xl text-2xl font-bold">Certification</h3>
+              <div
+                className="inline-grid space-y-8 bg-[#151515] border-2 border-[#252525] px-5 py-7 rounded-xl
+              -mt-7"
+              >
               </div>
             </>
           </div>

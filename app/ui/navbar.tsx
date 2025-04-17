@@ -34,7 +34,7 @@ const NavBar = () => {
           <span className="font-bold text-3xl text-[#08B876]">{code}</span>
           <span className="font-semibold text-2xl">Doward</span>
         </Link>
-        <div className="flex items-center gap-6 text-sm font-medium text-white max-md:hidden">
+        <div className="flex items-center gap-4 text-sm font-medium text-white">
           {navLinks.map((link) => (
             <Link
               key={link.label}
