@@ -1,9 +1,12 @@
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import "./globals.css";
+import { navLinks } from "./lib/constants";
+import Link from "next/link";
+import Image from "next/image";
 import NavBar from "./ui/navbar";
 
-const montserrat = Montserrat({subsets: ['latin']});
+const montserrat = Montserrat({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Doward Caparas",
@@ -17,9 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="max-w-[1440px] mx-auto">
-      <body
-        className={`${montserrat.className} antialiased`}
-      >
+      <body className={`${montserrat.className} antialiased`}>
         <NavBar />
         {children}
       </body>

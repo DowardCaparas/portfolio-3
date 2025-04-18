@@ -1,17 +1,20 @@
-import { CertificateTypes, TechnicalSkills } from "./types";
+import { CertificateTypes, NavLinksTypes, TechnicalSkills } from "./types";
 
-export const navLinks = [
+export const navLinks: NavLinksTypes[] = [
   {
     label: "Home",
     url: "/",
+    icon: "/home.svg"
   },
   {
     label: "About",
     url: "/about",
+    icon: "/user.svg"
   },
   {
     label: "Projects",
     url: "/projects",
+    icon: "/grid.svg"
   },
 ];
 

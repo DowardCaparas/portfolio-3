@@ -9,11 +9,11 @@ export default function Home() {
           className="absolute inset-0 mx-10 rounded-b-full blur-3xl"
           style={{
             background:
-              "radial-gradient(circle at top, #123c28 0%, transparent 50%)",
+              "radial-gradient(circle at top, #177044 0%, transparent 20%)",
           }}
         ></div>
 
-        <div className="absolute inset-0 border border-[#123c28] rounded-b-full mx-12 -mt-32 h-[100%] -z-10"></div>
+        <div className="absolute inset-0 border border-[#177044] rounded-b-full mx-12 -mt-32 h-[100%] -z-10"></div>
         <div className="absolute inset-0 border border-[#123c28] rounded-b-full mx-42 -mt-56 h-[100%] -z-10"></div>
       </div>
       <Hero />

@@ -1,56 +1,39 @@
 "use client";
 
-import Link from "next/link";
-import { usePathname } from "next/navigation";
 import { navLinks } from "../lib/constants";
-import { useEffect, useState } from "react";
+import Link from "next/link";
+import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 const NavBar = () => {
   const pathname = usePathname();
-  const code = "</>";
-  const [isScrolled, setIsScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 0);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   return (
-    <div className="fixed top-0 left-0 w-full z-10">
-      <nav
-        className={`flex justify-between items-center py-4 lg:px-24 md:px-16 sm:px-8 px-4 mx-auto 
-          transition-all duration-150 ease-in border-[#252525] 
-          max-w-[1440px] ${
-            isScrolled
-              ? "bg-[#0A0A0A]/80 backdrop-blur-md border-b"
-              : "bg-transparent"
-          }`}
+    <nav className="p-5 text-center grid sticky top-0 z-10">
+      <div
+        className="border border-[#3F3F3F] bg-[#0A0A0A] p-1.5 rounded-xl mx-auto 
+    space-x-2 col-span-3 flex"
       >
-        <Link href="/" className="flex items-center gap-2">
-          <span className="font-bold text-3xl text-[#08B876]">{code}</span>
-          <span className="font-semibold text-2xl">Doward</span>
-        </Link>
-        <div className="flex items-center gap-4 text-sm font-medium text-white">
-          {navLinks.map((link) => (
+        {navLinks.map((link, index) => (
+          <div key={link.label} className="flex gap-2 items-center">
             <Link
-              key={link.label}
               href={link.url}
-              className={`px-4 py-1 rounded-full ${
+              className={`text-sm  py-1.5 px-3 rounded-xl flex gap-2 items-center
+            transition duration-150 ease-out
+              ${
                 pathname === link.url
-                  ? "ring text-white"
-                  : "hover:ring-[#585858] hover:ring"
-              }`}
+                  ? "ring ring-[#6e6e6e] bg-[#353d3b]"
+                  : "hover:ring hover:ring-[#575757] hover:bg-[#161f1c] active:scale-95"
+              }
+            `}
             >
-              {link.label}
+              <Image src={link.icon} alt={link.label} width={18} height={18} />
+              {link.url !== "/" && <span>{link.label}</span>}
             </Link>
-          ))}
-        </div>
-      </nav>
-    </div>
+            {index === 0 && <span className="text-gray-500">|</span>}
+          </div>
+        ))}
+      </div>
+    </nav>
   );
 };
 

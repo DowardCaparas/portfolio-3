@@ -8,7 +8,7 @@ import {
 import RedirectButton from "../ui/redirect-button";
 
 const About = () => (
-  <div className="lg:px-24 md:px-16 sm:px-8 transition-all duration-150 ease-in my-32">
+  <div className="lg:px-24 md:px-16 sm:px-8 transition-all duration-150 ease-in my-14">
     <div className="grid md:grid-cols-3 grid-cols-1">
       {/* Sidebar */}
       <aside>
@@ -146,7 +146,7 @@ const About = () => (
 
           {/* Certification */}
           <Section title="Certification">
-            <div className="inline-grid space-y-8 bg-[#151515] border-2 border-[#252525] px-5 py-10 md:rounded-xl -mt-7">
+            <div className="inline-grid bg-[#151515] border-2 border-[#252525] px-5 py-10 md:rounded-xl -mt-7">
               {certificates.map((cert, i) => (
                 <div key={cert.name}>
                   <div className="flex items-start gap-2 text-sm">
@@ -157,7 +157,7 @@ const About = () => (
                       height={50}
                       className="border border-[#252525]"
                     />
-                    <div className="inline-grid space-y-1 max-md:text-sm">
+                    <div className="inline-grid max-md:text-sm">
                       <span className="font-semibold text-lg">{cert.name}</span>
                       <span>{cert.organization}</span>
                       <span>Issued {cert.date}</span>
@@ -182,7 +182,7 @@ const About = () => (
                       </div>
                     </div>
                   </div>
-                  <div className="ml-16 mt-5">
+                  <div className="ml-14 mt-5">
                     <RedirectButton
                       url={cert.url}
                       label="Show credential"
@@ -190,7 +190,7 @@ const About = () => (
                     />
                   </div>
                   {i < certificates.length - 1 && (
-                    <hr className="my-6 text-[#252525]" />
+                    <hr className="my-5 text-[#252525]" />
                   )}
                 </div>
               ))}

@@ -32,3 +32,9 @@ export type CertificateTypes = {
   skills: string[];
   description: string;
 }
+
+export type NavLinksTypes = {
+  label: string;
+  url: string;
+  icon: string;
+}

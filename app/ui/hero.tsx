@@ -4,10 +4,10 @@ const Hero = () => {
   return (
     <div
       className="w-full flex flex-col gap-10 justify-center items-center 
-    h-full text-center max-md:p-5 mt-32 z-10"
+    h-full text-center max-md:p-5 mt-14 z-10"
     >
       <span
-        className="text-[#ffffff] font-medium border-t border-[#3e9654] 
+        className="text-[#ffffff] font-medium border-t border-[#3e9683] 
       rounded-full py-2 px-6 text-sm"
       >
         Learning the craft. Creating with love.
@@ -24,7 +24,7 @@ const Hero = () => {
       </p>
       <Link
         href="/about"
-        className="rounded-lg py-3 px-8 bg-linear-to-b from-[#63e8a6] to-[#29c483]
+        className="rounded-lg py-3 px-8 bg-linear-to-b from-[#63e8e1] to-[#29c483]
         hover:opacity-80 active:scale-95 transition duration-300 ease-in font-semibold text-black"
       >
         About me
