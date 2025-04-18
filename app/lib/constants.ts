@@ -1,4 +1,4 @@
-import { TechnicalSkills } from "./types";
+import { CertificateTypes, TechnicalSkills } from "./types";
 
 export const navLinks = [
   {
@@ -157,56 +157,70 @@ export const projects = [
 const freeCodeCamp =
   "https://www.freecodecamp.org/certification/Dounhuward_B_Caparas/";
 
-export const certificates = [
+export const certificates: CertificateTypes[] = [
   {
     name: "SQL (Intermediate)",
-    from: "HackerRank",
+    organization: "HackerRank",
+    orglogo: "/hackerrank.svg",
     url: `https://www.hackerrank.com/certificates/iframe/ec24b289f045`,
     image: `/images/SQL(Intermediate)Cert.webp`,
-    date: "Mar 26, 2025",
+    date: "Mar 2025",
+    skills: ["Complex joins", "Unions", "Sub-queries"],
     description: `It includes complex joins, unions, and sub-queries.`,
   },
   {
     name: "SQL (Basic)",
-    from: "HackerRank",
+    organization: "HackerRank",
+    orglogo: "/hackerrank.svg",
     url: `https://www.hackerrank.com/certificates/iframe/ef81d36d6520`,
     image: `/images/SQL(Basic)Cert.webp`,
-    date: "Mar 26, 2025",
+    date: "Mar 2025",
+    skills: ["Simple queries", "Relationships", "Aggregators"],
     description: `It includes simple queries, relationships, and aggregators.`,
   },
   {
     name: "Problem Solving (Basic)",
-    from: "HackerRank",
+    organization: "HackerRank",
+    orglogo: "/hackerrank.svg",
     url: `https://www.hackerrank.com/certificates/iframe/ec24b289f045`,
     image: `/images/ProblemSolving(Basic)Cert.webp`,
-    date: "Mar 17, 2025",
+    date: "Mar 2025",
+    skills: ["Algorithms", "Data Structures", "Sorting and Searching", "Arrays and Strings"],
     description: `It covers basic topics of Data Structures (such as Arrays, Strings) 
       and Algorithms (such as Sorting and Searching).`,
   },
   {
     name: "React (Basic)",
-    from: "HackerRank",
+    organization: "HackerRank",
+    orglogo: "/hackerrank.svg",
     url: `https://www.hackerrank.com/certificates/iframe/57c3315cf170`,
     image: `/images/React(Basic)Cert.webp`,
-    date: "Mar 17, 2025",
+    date: "Mar 2025",
+    skills: ["Routing", "Rendering Elements", "State Management (Internal Component State)",
+      "Handling Events", " ES6 and JavaScript", "Form Validation"
+    ],
     description: `React (Basic) It covers topics like Basic Routing, Rendering Elements,
       State Management (Internal Component State), Handling Events, ES6 and JavaScript and Form Validation.`,
   },
   {
     name: "Foundational C-Sharp with Microsoft",
-    from: "freeCodeCamp",
+    organization: "freeCodeCamp",
+    orglogo: "/images/freeCodeCampLogo.webp",
     url: `${freeCodeCamp}foundational-c-sharp-with-microsoft`,
     image: `/images/FoundationalC-SharpCert.webp`,
-    date: "Aug 25, 2024",
+    date: "Aug 2024",
+    skills: ["Data Structures and Algorithm", "Loops", "Arrays"],
     description: `This certificate validates foundational knowledge of C#, including core syntax, 
       data structures, object-oriented programming principles, and error handling.`,
   },
   {
     name: "Responsive Web Design",
-    from: "freeCodeCamp",
+    organization: "freeCodeCamp",
+    orglogo: "/images/freeCodeCampLogo.webp",
     url: `${freeCodeCamp}responsive-web-design`,
     image: `/images/ResponsiveWebDesignCert.webp`,
-    date: "June 27, 2024",
+    date: "Jun 2024",
+    skills: ["Grids", "Flex box", "CSS", "HTML", "Media queries"],
     description: `It covers the principles of building responsive websites using HTML, CSS, and Flexbox, 
       ensuring a seamless experience across various screen sizes.`,
   },

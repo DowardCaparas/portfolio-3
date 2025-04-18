@@ -21,3 +21,14 @@ export type TechnicalSkills = {
     icon: string;
   }[];
 }
+
+export type CertificateTypes = {
+  name: string;
+  organization: string;
+  orglogo: string;
+  url: string;
+  image: string;
+  date: string;
+  skills: string[];
+  description: string;
+}
