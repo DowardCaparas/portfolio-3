@@ -5,7 +5,8 @@ import { Fragment } from "react";
 const Projects = () => {
   return (
     <div className="lg:px-24 md:px-16 sm:px-8 px-4 transition-all duration-150 ease-in my-14">
-      <h3 className="text-4xl font-bold">My Projects</h3>
+      <h3 className="md:text-4xl text-2xl font-bold mb-2">My Projects</h3>
+      <span className="md:text-lg">This is my journey in web development.</span>
       <div className="inline-grid space-y-6 w-full mt-20">
         {projects.map((project) => (
           <Fragment key={project.image}>
