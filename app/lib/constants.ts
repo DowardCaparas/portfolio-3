@@ -24,6 +24,26 @@ const githubPages = "https://dowardcaparas.github.io/";
 
 export const projects = [
   {
+    name: "Shapi",
+    type: "E-commerce Website",
+    image: "/images/shapiMockup.webp",
+    technologies: [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "SQL",
+      "PostgreSQL",
+      "Vercel",
+      "Tailwind",
+      "Shadcn",
+      "REST API"
+    ],
+    url: "https://dcaparas-shapi.vercel.app",
+    github: `${github}e-commerce-app-shapi`,
+    description: `Simple e-commerce prototype where users can sign up as either an Admin or a Shopper. 
+    Roles are stored locally and used to show different views.`
+  },
+  {
     name: "Book Keeper",
     type: "Web app",
     image: "/images/bookKeeperMockup.webp",
