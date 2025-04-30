@@ -17,7 +17,7 @@ const Hero = () => {
         <br />
         Full-Stack Web Developer
       </h1>
-      <p className="text-lg text-[#c5d3ce] lg:w-[40%] md:w-[60%] w-[90%] font-medium">
+      <p className="text-lg lg:w-[40%] md:w-[60%] w-[90%] font-medium">
         I build responsive, full-stack web apps with clean code and real-world
         functionality. I&apos;m passionate about learning, problem-solving, and
         bringing ideas to life through code.

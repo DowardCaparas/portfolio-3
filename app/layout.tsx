@@ -18,8 +18,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="max-w-[1440px] mx-auto">
-      <body className={`${montserrat.className} antialiased`}>
+      <body className={`${montserrat.className} antialiased relative`}>
         <NavBar />
+        <div className="fixed inset-0 -z-10 flex items-center justify-center">
+  <div className="h-[600px] w-[600px] rounded-full bg-green-200 opacity-10 blur-[150px]" />
+</div>
+
         {children}
         {/* Embedded Chatbot Script */}
         <Script

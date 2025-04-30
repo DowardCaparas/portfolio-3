@@ -13,8 +13,8 @@ const ProjectCard = ({
 }: ProjectCardTypes) => {
   return (
     <div
-      className="grid md:grid-cols-2 grid-cols-1 gap-4
-    bg-[#151515] border-2 border-[#252525] p-5 rounded-xl"
+      className="grid grid-cols-1 gap-4 hover:shadow-md shadow-green-300 transition
+    bg-[#151515] border-2 border-[#252525] p-4 rounded-xl"
     >
       <Image
         src={image}
@@ -24,13 +24,13 @@ const ProjectCard = ({
         className="w-full bg-[#222222] rounded-xl"
         quality={100}
       />
-      <div className="flex flex-col gap-8">
+      <div className="flex flex-col gap-4">
         <div className="inline-grid space-y-2">
           <span className="text-xl font-semibold">{name}</span>
           <span>{type}</span>
         </div>
         <span>{description}</span>
-        <div className="flex flex-wrap items-center gap-3">
+        <div className="flex flex-wrap items-center gap-2 my-1">
           {technologies.map((tech) => (
             <span
               key={tech}
