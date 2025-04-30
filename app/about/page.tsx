@@ -8,7 +8,7 @@ import {
 import RedirectButton from "../ui/redirect-button";
 
 const About = () => (
-  <div className="lg:px-24 md:px-16 sm:px-8 transition-all duration-150 ease-in my-14">
+  <div className="lg:px-12 md:px-8 px-4 transition my-14">
     <div className="grid md:grid-cols-3 grid-cols-1">
       {/* Sidebar */}
       <aside>

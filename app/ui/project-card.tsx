@@ -13,18 +13,18 @@ const ProjectCard = ({
 }: ProjectCardTypes) => {
   return (
     <div
-      className="grid grid-cols-1 gap-4 hover:shadow-md shadow-green-300 transition
-    bg-[#151515] border-2 border-[#252525] p-4 rounded-xl"
+      className="flex flex-col hover:shadow-md shadow-green-300 transition
+    bg-[#151515] ring-2 ring-[#252525] rounded-xl"
     >
       <Image
         src={image}
         alt={name}
         width={500}
         height={610}
-        className="w-full bg-[#222222] rounded-xl"
+        className="w-full bg-[#222222] rounded-t-xl"
         quality={100}
       />
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-4 p-4">
         <div className="inline-grid space-y-2">
           <span className="text-xl font-semibold">{name}</span>
           <span>{type}</span>

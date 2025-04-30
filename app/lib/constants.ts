@@ -40,8 +40,7 @@ export const projects = [
     ],
     url: "https://dcaparas-shapi.vercel.app",
     github: `${github}e-commerce-app-shapi`,
-    description: `Simple e-commerce prototype where users can sign up as either an Admin or a Shopper. 
-    Roles are stored locally and used to show different views.`
+    description: `Simple e-commerce prototype where users can sign up as either an Admin or a Shopper.`
   },
   {
     name: "Book Keeper",
