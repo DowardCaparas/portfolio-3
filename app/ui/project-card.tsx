@@ -42,7 +42,7 @@ const ProjectCard = ({
             </span>
           ))}
         </div>
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-2">
           <RedirectButton url={url} label="Live Demo" image="/arrowup.svg" />
           <RedirectButton url={github} label="Github" image="/github.svg" />
         </div>
