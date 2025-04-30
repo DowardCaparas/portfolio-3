@@ -16,7 +16,7 @@ const ProjectCard = ({
       className="flex flex-col hover:shadow-md shadow-green-300 transition
     bg-[#151515] ring-2 ring-[#252525] rounded-xl"
     >
-      <div className="h-70">
+      <div className="md:h-70 sm:h-96 h-80">
       <Image
         src={image}
         alt={name}
