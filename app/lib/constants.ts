@@ -137,7 +137,16 @@ export const projects = [
     description: `Decimal to Binary converter and vice versa.`,
   },
   {
-    name: "Portfolio Website",
+    name: "Doward Website",
+    type: "Website",
+    image: "/images/dowardPortfolioMockup01.webp",
+    technologies: ["React", "Next.js", "TypeScript", "Tailwind"],
+    url: "https://dowardc.vercel.app",
+    github: `${github}portfolio-main`,
+    description: `This is my old website.`,
+  },
+  {
+    name: "Sophia Site",
     type: "Website",
     image: "/images/sophiaPortfolioMockup.webp",
     technologies: ["React", "Next.js", "TypeScript", "Tailwind"],
@@ -146,7 +155,7 @@ export const projects = [
     description: `Single page website.`,
   },
   {
-    name: "Portfolio Website",
+    name: "Doward Site",
     type: "Website",
     image: "/images/dowardPortfolioMockup.webp",
     technologies: ["HTML5", "CSS3", "Vanilla JavaScript"],

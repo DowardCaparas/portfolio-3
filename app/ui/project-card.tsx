@@ -16,14 +16,16 @@ const ProjectCard = ({
       className="flex flex-col hover:shadow-md shadow-green-300 transition
     bg-[#151515] ring-2 ring-[#252525] rounded-xl"
     >
+      <div className="h-70">
       <Image
         src={image}
         alt={name}
         width={500}
         height={610}
-        className="w-full bg-[#222222] rounded-t-xl"
+        className="w-full bg-[#222222] rounded-t-xl h-full"
         quality={100}
       />
+      </div>
       <div className="flex flex-col gap-4 p-4">
         <div className="inline-grid space-y-2">
           <span className="text-xl font-semibold">{name}</span>

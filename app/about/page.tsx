@@ -170,14 +170,16 @@ const About = () => (
                           </span>
                         ))}
                       </div>
-                      <div className="flex max-md:flex-col items-start gap-2">
-                        <Image
+                      <div className="inline-grid space-y-2">
+                       <div className="h-16">
+                       <Image
                           src={cert.image}
                           alt={cert.name}
                           width={100}
                           height={100}
-                          className="rounded-md"
+                          className="rounded-md h-full"
                         />
+                       </div>
                         <span>{cert.description}</span>
                       </div>
                     </div>
