@@ -22,7 +22,7 @@ const ProjectCard = ({
         alt={name}
         width={500}
         height={610}
-        className="w-full bg-[#222222] rounded-t-xl h-full"
+        className="w-full bg-[#222222] rounded-t-xl h-full object-contain"
         quality={100}
       />
       </div>

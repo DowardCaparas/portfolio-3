@@ -6,6 +6,7 @@ import {
   technicalSkills,
 } from "../lib/constants";
 import RedirectButton from "../ui/redirect-button";
+import ResumeButton from "../ui/resume-button";
 
 const About = () => (
   <div className="lg:px-12 md:px-8 px-4 transition my-14">
@@ -56,7 +57,9 @@ const About = () => (
             ))}
           </div>
         </div>
-
+        <div className="mt-5 flex max-md:justify-center">
+          <ResumeButton />
+        </div>
         <p className="font-medium md:text-lg mt-14 mb-20 text-justify max-md:px-4">
           👋 Hey there! I&apos;m an aspiring Full Stack Web Developer with a
           strong focus on building clean, responsive, and dynamic web
