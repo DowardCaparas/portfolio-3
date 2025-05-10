@@ -148,7 +148,7 @@ const About = () => (
           </Section>
 
           {/* Certification */}
-          <Section title="Certification">
+          <Section title="Certifications">
             <div className="inline-grid bg-[#151515] border-2 border-[#252525] px-5 py-10 md:rounded-xl -mt-7">
               {certificates.map((cert, i) => (
                 <div key={cert.name}>
