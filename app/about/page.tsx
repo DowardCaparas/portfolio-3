@@ -7,6 +7,10 @@ import {
 } from "../lib/constants";
 import RedirectButton from "../ui/redirect-button";
 import ResumeButton from "../ui/resume-button";
+import CertificateCards from "../ui/certficate-cards";
+import Link from "next/link";
+
+const slicedCertificateArray = certificates.slice(0, 3);
 
 const About = () => (
   <div className="lg:px-12 md:px-8 px-4 transition my-14">
@@ -75,7 +79,9 @@ const About = () => (
             <div className="max-md:px-4">
               <div className="flex max-lg:flex-col lg:justify-between lg:items-center gap-4 -mt-7">
                 <div className="inline-grid">
-                  <span className="font-semibold md:text-xl text-lg">P.IMES</span>
+                  <span className="font-semibold md:text-xl text-lg">
+                    P.IMES
+                  </span>
                   <span className="text-sm text-[#08B876] font-medium">
                     Systems and Facility Management Dept. -Intern
                   </span>
@@ -104,7 +110,9 @@ const About = () => (
             <div className="inline-grid space-y-8 bg-[#151515] border-2 border-[#252525] px-5 py-7 md:rounded-xl -mt-7">
               {technicalSkills.map((group) => (
                 <div key={group.category} className="inline-grid space-y-2">
-                  <span className="font-medium md:text-lg">{group.category}</span>
+                  <span className="font-medium md:text-lg">
+                    {group.category}
+                  </span>
                   <div className="flex flex-wrap items-center gap-2">
                     {group.skills.map((tech) => (
                       <div
@@ -149,56 +157,33 @@ const About = () => (
 
           {/* Certification */}
           <Section title="Certifications">
-            <div className="inline-grid bg-[#151515] border-2 border-[#252525] px-5 py-10 md:rounded-xl -mt-7">
-              {certificates.map((cert, i) => (
-                <div key={cert.name}>
-                  <div className="flex items-start gap-2 text-sm">
-                    <Image
-                      src={cert.orglogo}
-                      alt={cert.organization}
-                      width={50}
-                      height={50}
-                      className="border border-[#252525]"
-                    />
-                    <div className="inline-grid max-md:text-sm">
-                      <span className="font-semibold text-lg">{cert.name}</span>
-                      <span>{cert.organization}</span>
-                      <span>Issued {cert.date}</span>
-                      <div className="text-wrap mt-4 mb-3">
-                        <span className="font-medium">Skills: </span>
-                        {cert.skills.map((skill, i) => (
-                          <span key={skill}>
-                            {skill}
-                            {i < cert.skills.length - 1 && " · "}
-                          </span>
-                        ))}
-                      </div>
-                      <div className="inline-grid space-y-2">
-                       <div className="h-16">
-                       <Image
-                          src={cert.image}
-                          alt={cert.name}
-                          width={100}
-                          height={100}
-                          className="rounded-md h-full"
-                        />
-                       </div>
-                        <span>{cert.description}</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="ml-14 mt-5">
-                    <RedirectButton
+            {/* import certificates */}
+            <div className="inline-grid bg-[#151515] border-2 border-[#252525] pt-5 md:rounded-xl -mt-7">
+              <div className="px-5">
+                {/* import certificates */}
+                {slicedCertificateArray.map((cert) => (
+                  <div key={cert.name}>
+                    <CertificateCards
+                      name={cert.name}
+                      organization={cert.organization}
+                      orglogo={cert.orglogo}
                       url={cert.url}
-                      label="Show credential"
-                      image="/arrowup.svg"
+                      image={cert.image}
+                      date={cert.date}
+                      skills={cert.skills}
+                      description={cert.description}
                     />
+                    <hr className="mt-5 text-[#252525]" />
                   </div>
-                  {i < certificates.length - 1 && (
-                    <hr className="my-5 text-[#252525]" />
-                  )}
-                </div>
-              ))}
+                ))}
+              </div>
+              <Link
+                href="/certificates"
+                className="text-center hover:bg-[#3F3F3F] active:bg-[#2c2c2c] py-3 transition-colors
+                    duration-300 ease-in font-medium rounded-b-lg"
+              >
+                Show all {certificates.length} certifications{" "}
+              </Link>
             </div>
           </Section>
         </div>
@@ -207,7 +192,13 @@ const About = () => (
   </div>
 );
 
-const Section = ({ title, children }: { title: string; children: React.ReactNode }) => (
+const Section = ({
+  title,
+  children,
+}: {
+  title: string;
+  children: React.ReactNode;
+}) => (
   <>
     <h3 className="lg:text-4xl md:text-3xl text-2xl font-bold max-md:px-4">
       {title}

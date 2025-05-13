@@ -12,6 +12,11 @@ export const navLinks: NavLinksTypes[] = [
     icon: "/user.svg"
   },
   {
+    label: "Certificates",
+    url: "/certificates",
+    icon: "/file-text.svg"
+  },
+  {
     label: "Projects",
     url: "/projects",
     icon: "/grid.svg"
