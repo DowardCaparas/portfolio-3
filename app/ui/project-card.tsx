@@ -13,8 +13,7 @@ const ProjectCard = ({
 }: ProjectCardTypes) => {
   return (
     <div
-      className="flex flex-col hover:shadow-md shadow-green-300 transition
-    bg-[#151515] ring-2 ring-[#252525] rounded-xl"
+      className="flex flex-col transition ring ring-[#424242] shadow-md shadow-green-900 rounded-xl"
     >
       <div className="md:h-70 sm:h-96 h-80">
       <Image
@@ -22,7 +21,7 @@ const ProjectCard = ({
         alt={name}
         width={500}
         height={610}
-        className="w-full bg-[#222222] rounded-t-xl h-full object-contain"
+        className="w-full rounded-t-xl h-full object-contain"
         quality={100}
       />
       </div>
