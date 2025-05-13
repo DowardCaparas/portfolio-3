@@ -22,7 +22,7 @@ export default function Home() {
       {/* Award Section */}
       <section className="my-28 px-4 md:px-8 lg:px-12 transition">
         <div className="flex flex-col items-center gap-10 text-center">
-          <h2 className="text-4xl font-bold">🏆 Best Capstone Award</h2>
+          <h2 className="text-4xl font-bold">Best Capstone Award 🏆</h2>
 
           <div className="relative w-full max-w-4xl aspect-[4/3] bg-gray-100 rounded-lg 
           overflow-hidden">
