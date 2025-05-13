@@ -3,7 +3,7 @@ import Hero from "./ui/hero";
 
 export default function Home() {
   return (
-    <>
+    <div className="my-32">
       <div className="absolute inset-0 overflow-hidden -z-10">
         {/* Background Gradient Blob */}
         <div
@@ -68,6 +68,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-    </>
+    </div>
   );
 }

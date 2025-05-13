@@ -13,7 +13,7 @@ import Link from "next/link";
 const slicedCertificateArray = certificates.slice(0, 3);
 
 const About = () => (
-  <div className="lg:px-12 md:px-8 px-4 transition my-14">
+  <div className="lg:px-12 md:px-8 px-4 transition my-28">
     <div className="grid md:grid-cols-3 grid-cols-1">
       {/* Sidebar */}
       <aside>
@@ -180,7 +180,7 @@ const About = () => (
               <Link
                 href="/certificates"
                 className="text-center hover:bg-[#3F3F3F] active:bg-[#2c2c2c] py-3 transition-colors
-                    duration-300 ease-in font-medium rounded-b-lg"
+                    duration-300 ease-in font-medium md:rounded-b-lg"
               >
                 Show all {certificates.length} certifications{" "}
               </Link>

@@ -23,14 +23,14 @@ const CertificateCards = ({
           height={50}
           className="border border-[#252525]"
         />
-        <div className="inline-grid max-md:text-sm">
+        <div className="inline-grid max-md:text-sm w-full">
           <span className="font-semibold text-lg">{name}</span>
           <span>{organization}</span>
           <span>Issued {date}</span>
-          <div className="text-wrap mt-4 mb-3">
+          <div className="text-wrap mt-4 mb-3 md:w-[50%]">
             <span className="font-medium">Skills: </span>
             {skills.map((skill, i) => (
-              <span key={skill}>
+              <span key={skill} >
                 {skill}
                 {i < skills.length - 1 && " · "}
               </span>
@@ -46,7 +46,7 @@ const CertificateCards = ({
                 className="rounded-md h-full"
               />
             </div>
-            <span>{description}</span>
+            <span className="md:w-[50%]">{description}</span>
           </div>
         </div>
       </div>
