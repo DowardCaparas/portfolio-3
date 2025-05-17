@@ -1,27 +1,4 @@
-import { CertificateTypes, NavLinksTypes, TechnicalSkills } from "./types";
-
-export const navLinks: NavLinksTypes[] = [
-  {
-    label: "Home",
-    url: "/",
-    icon: "/home.svg"
-  },
-  {
-    label: "About",
-    url: "/about",
-    icon: "/user.svg"
-  },
-  {
-    label: "Certificates",
-    url: "/certificates",
-    icon: "/file-text.svg"
-  },
-  {
-    label: "Projects",
-    url: "/projects",
-    icon: "/grid.svg"
-  },
-];
+import { CertificateTypes, TechnicalSkills } from "./types";
 
 // Projects
 const github = "https://github.com/DowardCaparas/";

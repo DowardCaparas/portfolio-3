@@ -1,3 +1,5 @@
+import { LucideIcon } from "lucide-react";
+
 export type ProjectCardTypes = {
   name: string;
   type: string;
@@ -36,5 +38,5 @@ export type CertificateTypes = {
 export type NavLinksTypes = {
   label: string;
   url: string;
-  icon: string;
+  icon: LucideIcon;
 }

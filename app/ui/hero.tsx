@@ -7,7 +7,7 @@ const Hero = () => {
     h-full text-center max-md:p-5 mt-14 z-10"
     >
       <span
-        className="text-[#ffffff] font-medium border-t border-[#3e9683] 
+        className="font-medium border-t border-[#3e9683] 
       rounded-full py-2 px-6 text-sm"
       >
         Learning the craft. Creating with love.

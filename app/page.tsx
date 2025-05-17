@@ -5,17 +5,11 @@ export default function Home() {
   return (
     <div className="my-32">
       <div className="absolute inset-0 overflow-hidden -z-10">
-        {/* Background Gradient Blob */}
-        <div
-          className="absolute inset-0 mx-10 rounded-b-full blur-3xl"
-          style={{
-            background:
-              "radial-gradient(circle at top, #177044 0%, transparent 20%)",
-          }}
-        ></div>
 
-        <div className="absolute inset-0 border border-[#177044] rounded-b-full mx-12 -mt-32 h-[100%] -z-10"></div>
-        <div className="absolute inset-0 border border-[#123c28] rounded-b-full mx-42 -mt-56 h-[100%] -z-10"></div>
+        <div className="absolute inset-0 ring ring-gray-300 dark:ring-[#177044] rounded-b-full 
+        mx-12 -mt-32 h-[100%] -z-10"></div>
+        <div className="absolute inset-0 ring ring-gray-300 dark:ring-[#123c28] rounded-b-full 
+        mx-42 -mt-56 h-[100%] -z-10"></div>
       </div>
       <Hero />
 

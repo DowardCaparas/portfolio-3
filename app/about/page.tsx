@@ -50,7 +50,7 @@ const About = () => (
               Web Developer
             </span>
           </div>
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-4">
             {socials.map((s) => (
               <RedirectButton
                 key={s.name}
@@ -82,11 +82,11 @@ const About = () => (
                   <span className="font-semibold md:text-xl text-lg">
                     P.IMES
                   </span>
-                  <span className="text-sm text-[#08B876] font-medium">
+                  <span className="text-sm text-[#028152] font-medium">
                     Systems and Facility Management Dept. -Intern
                   </span>
                 </div>
-                <span className="text-[#acacac] font-medium text-sm">
+                <span className="font-medium text-sm">
                   Oct 2023 - Dec 2023
                 </span>
               </div>
@@ -107,7 +107,8 @@ const About = () => (
 
           {/* Technical Skills */}
           <Section title="Technical Skills">
-            <div className="inline-grid space-y-8 bg-[#151515] border-2 border-[#252525] px-5 py-7 md:rounded-xl -mt-7">
+            <div className="inline-grid space-y-8 dark:bg-[#151515] ring ring-gray-400
+            dark:ring-[#252525] px-5 py-7 md:rounded-xl -mt-7">
               {technicalSkills.map((group) => (
                 <div key={group.category} className="inline-grid space-y-2">
                   <span className="font-medium md:text-lg">
@@ -118,7 +119,7 @@ const About = () => (
                       <div
                         key={tech.name}
                         className="flex items-center gap-2 bg-[#222222] 
-                        border-2 border-[#252525] p-4 rounded-xl"
+                        p-4 rounded-xl text-white"
                       >
                         <Image
                           src={tech.icon}
@@ -149,7 +150,7 @@ const About = () => (
                   Cavite State University - Naic Campus
                 </span>
                 <span>Bachelor&apos;s degree, Information Technology</span>
-                <span className="text-[#acacac]">Sep 2019 - Feb 2024</span>
+                <span>Sep 2019 - Feb 2024</span>
                 <span>GPA: 1.63</span>
               </div>
             </div>
@@ -158,7 +159,9 @@ const About = () => (
           {/* Certification */}
           <Section title="Certifications">
             {/* import certificates */}
-            <div className="inline-grid bg-[#151515] border-2 border-[#252525] pt-5 md:rounded-xl -mt-7">
+            <div className="inline-grid dark:bg-[#151515] ring ring-gray-400
+            dark:ring-[#252525] pt-5 md:rounded-xl 
+            -mt-7">
               <div className="px-5">
                 {/* import certificates */}
                 {slicedCertificateArray.map((cert) => (
@@ -179,8 +182,8 @@ const About = () => (
               </div>
               <Link
                 href="/certificates"
-                className="text-center hover:bg-[#3F3F3F] active:bg-[#2c2c2c] py-3 transition-colors
-                    duration-300 ease-in font-medium md:rounded-b-lg"
+                className="text-center hover:underline py-3 font-medium md:rounded-b-lg
+                active:scale-95"
               >
                 Show all {certificates.length} certifications{" "}
               </Link>
