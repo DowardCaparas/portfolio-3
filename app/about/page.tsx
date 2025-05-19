@@ -46,7 +46,7 @@ const About = () => (
             <h1 className="font-bold lg:text-6xl md:text-5xl text-4xl">
               Doward Caparas
             </h1>
-            <span className="lg:text-3xl text-2xl text-[#898989] font-medium">
+            <span className="lg:text-3xl text-2xl font-medium">
               Web Developer
             </span>
           </div>
@@ -82,7 +82,7 @@ const About = () => (
                   <span className="font-semibold md:text-xl text-lg">
                     P.IMES
                   </span>
-                  <span className="text-sm text-[#028152] font-medium">
+                  <span className="font-medium">
                     Systems and Facility Management Dept. -Intern
                   </span>
                 </div>

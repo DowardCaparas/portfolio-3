@@ -91,7 +91,7 @@ const NavBar = () => {
       <div
         className={`fixed top-0 left-0 h-full w-[70%] bg-gray-100 dark:bg-[#0A0A0A] 
           shadow-lg transform z-20 transition-transform duration-300 ease-in-out hidden
-          max-md:block
+          max-md:block border-r border-gray-600
           ${isModalOpen ? "translate-x-0" : "-translate-x-full"}`}
       >
         <div className="flex flex-col p-6 pt-24 gap-4">
