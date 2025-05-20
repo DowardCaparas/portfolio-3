@@ -61,7 +61,7 @@ const About = () => (
             ))}
           </div>
         </div>
-        <div className="mt-5 flex max-md:justify-center">
+        <div className="mt-4 flex max-md:justify-center">
           <ResumeButton />
         </div>
         <p className="font-medium md:text-lg mt-14 mb-20 text-justify max-md:px-4">
@@ -107,8 +107,8 @@ const About = () => (
 
           {/* Technical Skills */}
           <Section title="Technical Skills">
-            <div className="inline-grid space-y-8 dark:bg-[#151515] ring ring-gray-400
-            dark:ring-[#252525] px-5 py-7 md:rounded-xl -mt-7">
+            <div className="inline-grid space-y-8 bg-gray-200 dark:bg-[#151515] 
+            ring ring-gray-400 dark:ring-[#252525] px-5 py-7 md:rounded-xl -mt-7">
               {technicalSkills.map((group) => (
                 <div key={group.category} className="inline-grid space-y-2">
                   <span className="font-medium md:text-lg">
@@ -159,9 +159,8 @@ const About = () => (
           {/* Certification */}
           <Section title="Certifications">
             {/* import certificates */}
-            <div className="inline-grid dark:bg-[#151515] ring ring-gray-400
-            dark:ring-[#252525] pt-5 md:rounded-xl 
-            -mt-7">
+            <div className="inline-grid bg-gray-200 dark:bg-[#151515] 
+            ring ring-gray-400 dark:ring-[#252525] pt-5 md:rounded-xl -mt-7">
               <div className="px-5">
                 {/* import certificates */}
                 {slicedCertificateArray.map((cert) => (
