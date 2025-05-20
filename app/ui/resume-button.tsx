@@ -1,5 +1,5 @@
 "use client";
-
+``
 import React from "react";
 import { File } from "lucide-react";
 
@@ -12,8 +12,9 @@ const ResumeButton = () => {
     <button
       onClick={() => openNewWindow("/files/Dounhuward_Caparas_Resume.pdf")}
       aria-label="open Dounhuward Caparas resume in new window"
-      className="flex items-center gap-2 text-center p-2 cursor-pointer rounded-lg
-    bg-black hover:opacity-85 text-white active:scale-95 shadow-md"
+        className="flex items-center gap-2 text-center p-2 cursor-pointer rounded-md
+    dark:bg-black bg-[#333] hover:opacity-80 text-white active:scale-95 shadow-md ring-2 
+    dark:ring-[#333] ring-black hover:scale-102"
     >
       <File size={18}/>
       <span className="text-center text-sm font-medium">Resume</span>
