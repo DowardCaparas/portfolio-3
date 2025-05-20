@@ -45,7 +45,7 @@ const NavBar = () => {
     <>
       <nav
         className="ring ring-gray-300 dark:ring-[#3F3F3F] dark:bg-[#0A0A0A] 
-        bg-gray-100 p-4 mx-auto gap-2 fixed top-0 z-30 right-0 left-0 
+        bg-gray-100 py-4 px-4 lg:px-12 md:px-8 mx-auto gap-2 fixed top-0 z-30 right-0 left-0 
         flex justify-between items-center"
       >
         <h3 className="font-bold text-2xl">Doward</h3>
@@ -66,9 +66,7 @@ const NavBar = () => {
                 `}
               >
                 <link.icon size={18} />
-                {link.url !== "/" && (
-                  <span className="font-medium">{link.label}</span>
-                )}
+                <span className="font-medium">{link.label}</span>
               </Link>
               {index === 0 && <span className="text-gray-500">|</span>}
             </div>
