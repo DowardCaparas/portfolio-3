@@ -33,7 +33,7 @@ export default function Home() {
             <p className="text-lg leading-relaxed">
               This was the day we received the{" "}
               <strong>Best Capstone Award</strong> for our project:
-              <em>
+              <em className="font-bold mr-1">
                 {" "}
                 Simian: A Mobile Educational Game for Primary Level in Learning
                 Space Science.

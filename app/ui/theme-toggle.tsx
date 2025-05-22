@@ -14,9 +14,9 @@ const ThemeToggle = () => {
       aria-label="Toggle Dark Mode"
     >
       {isDark ? (
-        <Sun size={18} className="text-yellow-300" />
+        <Sun size={20} className="text-yellow-300" />
       ) : (
-        <Moon size={18} className="text-white fill-white " />
+        <Moon size={20} className="text-white fill-white " />
       )}
     </button>
   );
