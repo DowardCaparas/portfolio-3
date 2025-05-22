@@ -52,7 +52,7 @@ const NavBar = () => {
 
         <div className="flex gap-2 max-md:hidden">
           {navLinks.map((link, index) => (
-            <div key={link.label} className="flex gap-2 items-center">
+            <div key={link.label} className="flex gap-4 items-center">
               <Link
                 href={link.url}
                 className={`text-sm py-1.5 px-3 rounded-lg flex gap-1 items-center
