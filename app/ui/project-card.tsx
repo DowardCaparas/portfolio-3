@@ -26,7 +26,7 @@ const ProjectCard = ({
       />
       </div>
       <div className="flex flex-col gap-4 p-4">
-        <div className="inline-grid space-y-2">
+        <div className="inline-grid -mt-6">
           <span className="text-xl font-semibold">{name}</span>
           <span>{type}</span>
         </div>
