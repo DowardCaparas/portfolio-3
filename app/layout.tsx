@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="max-w-[1440px] mx-auto">
-      <body className={`${montserrat.className} antialiased dark:bg-[#0a0a0a] dark:text-white`}>
+      <body className={`${montserrat.className} antialiased dark:bg-[#0a0a0a] bg-gray-50 dark:text-white`}>
         <NavBar />
         <div className="fixed inset-0 -z-10 flex items-center justify-center">
           <div className="h-[600px] w-[600px] rounded-full bg-gray-500 dark:bg-green-200 opacity-10 blur-[150px]" />
@@ -42,6 +42,10 @@ export default function RootLayout({
           strategy="lazyOnload" // Ensures it loads after the page
         />
       </body>
+
+      <footer className="py-9 bg-gray-200">
+        <p className="text-center text-sm">&copy; 2025 Dounhuward B. Caparas All rights reserved.</p>
+      </footer>
     </html>
   );
 }

@@ -13,7 +13,7 @@ const ProjectCard = ({
 }: ProjectCardTypes) => {
   return (
     <div
-      className="flex flex-col transition ring ring-gray-500 dark:ring-[#424242] rounded-xl"
+      className="flex flex-col dark:bg-[#313131] bg-white transition ring ring-gray-500 dark:ring-[#424242] rounded-xl"
     >
       <div className="md:h-70 sm:h-96 h-80">
       <Image
@@ -36,7 +36,7 @@ const ProjectCard = ({
             <span
               key={tech}
               className="rounded-full ring-2 ring-gray-300 dark:ring-[#333333] bg-gray-200 
-              dark:bg-[#0A0A0A] py-1 px-4 text-sm"
+              dark:bg-[#212121] py-1 px-4 text-sm"
             >
               {tech}
             </span>
