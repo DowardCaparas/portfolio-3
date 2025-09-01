@@ -41,11 +41,10 @@ export default function RootLayout({
           src="https://www.chatbase.co/embed.min.js"
           strategy="lazyOnload" // Ensures it loads after the page
         />
-      </body>
-
-      <footer className="py-9 bg-gray-200">
+         <footer className="py-9 bg-gray-200">
         <p className="text-center text-sm">&copy; 2025 Dounhuward B. Caparas All rights reserved.</p>
       </footer>
+      </body>
     </html>
   );
 }

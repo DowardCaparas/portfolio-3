@@ -9,7 +9,7 @@ export default function useDarkMode(): [boolean, () => void] {
   useEffect(() => {
     // Check for saved user preference or fallback to system setting
     const savedTheme = localStorage.getItem("theme");
-    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    const prefersDark = window.matchMedia("(prefers-color-scheme: light)").matches;
     const isDarkMode = savedTheme === "dark" || (!savedTheme && prefersDark);
 
     setIsDark(isDarkMode);
