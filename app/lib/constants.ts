@@ -273,35 +273,25 @@ export const technicalSkills: TechnicalSkills[] = [
   {
     category: "Frontend",
     skills: [
-      {
-        name: "JavaScript",
-        icon: "/techstacks/javascript.svg",
-      },
-      {
-        name: "TypeScript",
-        icon: "/techstacks/typescript.svg",
-      },
-      {
-        name: "React",
-        icon: "/techstacks/react.svg",
-      },
+      { name: "JavaScript", icon: "/techstacks/javascript.svg" },
+      { name: "TypeScript", icon: "/techstacks/typescript.svg" },
+      { name: "React", icon: "/techstacks/react.svg" },
       {
         name: "Next.js",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
       },
-      {
-        name: "Tailwind CSS",
-        icon: "/techstacks/tailwind.svg",
+      { name: "Tailwind CSS", icon: "/techstacks/tailwind.svg" },
+            {
+        name: "Bootstrap",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg",
       },
-    ]
+
+    ],
   },
   {
     category: "Backend",
     skills: [
-      {
-        name: "Node.js",
-        icon: "/techstacks/nodejs.svg",
-      },
+      { name: "Node.js", icon: "/techstacks/nodejs.svg" },
       {
         name: "REST API",
         icon: "https://img.icons8.com/ios-filled/50/ffffff/api.png",
@@ -310,7 +300,24 @@ export const technicalSkills: TechnicalSkills[] = [
         name: "PostgreSQL",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
       },
-    ]
+      {
+        name: "SQL",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
+      },
+
+      {
+        name: "C#",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg",
+      },
+      {
+        name: "ASP.NET Core",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-original.svg",
+      },
+      {
+        name: "Microsoft Azure",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg",
+      },
+    ],
   },
   {
     category: "Tools",
@@ -319,18 +326,9 @@ export const technicalSkills: TechnicalSkills[] = [
         name: "Postman",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg",
       },
-      {
-        name: "Git",
-        icon: "/techstacks/git.svg",
-      },
-      {
-        name: "GitHub",
-        icon: "/github.svg",
-      },
-      {
-        name: "Vercel",
-        icon: "/vercel.svg",
-      },
-    ]
+      { name: "Git", icon: "/techstacks/git.svg" },
+      { name: "GitHub", icon: "/github.svg" },
+      { name: "Vercel", icon: "/vercel.svg" },
+    ],
   },
 ];
