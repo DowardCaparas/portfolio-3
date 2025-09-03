@@ -15,7 +15,7 @@ const ProjectCard = ({
     <div
       className="flex flex-col dark:bg-[#313131] bg-white transition ring ring-gray-500 dark:ring-[#424242] rounded-xl"
     >
-      <div className="md:h-70 sm:h-96 h-80">
+      <div className="md:h-70 sm:h-96 h-80 bg-gray-300 dark:bg-[#515151] rounded-t-xl">
       <Image
         src={image}
         alt={name}
@@ -27,16 +27,16 @@ const ProjectCard = ({
       </div>
       <div className="flex flex-col gap-4 p-4">
         <div className="inline-grid -mt-6">
-          <span className="text-xl font-semibold">{name}</span>
+          <span className="text-xl font-semibold mt-4">{name}</span>
           <span>{type}</span>
         </div>
-        <span>{description}</span>
+        <span className="text-sm text-gray-700 dark:text-white">{description}</span>
         <div className="flex flex-wrap items-center gap-2 my-1">
           {technologies.map((tech) => (
             <span
               key={tech}
-              className="rounded-full ring-2 ring-gray-300 dark:ring-[#333333] bg-gray-200 
-              dark:bg-[#212121] py-1 px-4 text-sm"
+              className="rounded-full ring-1 ring-gray-200 dark:ring-[#333333] bg-gray-100 
+              dark:bg-[#212121] py-1 px-4 text-xs"
             >
               {tech}
             </span>
