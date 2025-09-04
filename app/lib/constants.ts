@@ -185,7 +185,7 @@ export const projects = [
     id: 12,
     name: "Day Counter",
     type: "Web App",
-    image: "/images/remainingDaysCalculatorMockup.webp",
+    image: "/images/remainingDaysCalculatorMockup.png",
     technologies: ["Tailwind", "React", "Next.js", "JavaScript"],
     url: `${githubPages}RemainingDayCounter`,
     github: `${github}RemainingDayCounter`,
