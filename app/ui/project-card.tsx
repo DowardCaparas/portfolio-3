@@ -15,12 +15,12 @@ const ProjectCard = ({
     <div
       className="flex flex-col dark:bg-[#313131] bg-white transition ring ring-gray-500 dark:ring-[#424242] rounded-xl"
     >
-      <div className="md:h-70 sm:h-96 h-80 bg-gray-300 dark:bg-[#515151] rounded-t-xl">
+      <div className="h-50 bg-gray-300 dark:bg-[#515151] rounded-t-xl">
       <Image
         src={image}
         alt={name}
         width={500}
-        height={610}
+        height={600}
         className="w-full rounded-t-xl h-full object-contain"
         quality={100}
       />
@@ -42,7 +42,7 @@ const ProjectCard = ({
             </span>
           ))}
         </div>
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-4">
           <RedirectButton url={url} label="Live Demo" image="/arrowup.svg" />
           <RedirectButton url={github} label="Github" image="/github.svg" />
         </div>
