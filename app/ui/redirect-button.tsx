@@ -13,7 +13,7 @@ const RedirectButton = ({ url, label, image }: RedirectButtonTypes) => {
       onClick={() => openNewWindow(url)}
       aria-label={`redirect user to ${url}`}
       className="flex items-center gap-2 text-center p-2 cursor-pointer rounded-md 
-    bg-[#9bffc1] hover:opacity-80 text-black active:scale-95 ring-2 
+    bg-[#a8fec9] hover:opacity-80 text-black active:scale-95 ring
   ring-[#43ab6b] hover:scale-102"
     >
       <Image src={image} alt={label} width={18} height={18} />

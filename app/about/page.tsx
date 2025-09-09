@@ -73,6 +73,26 @@ const About = () => (
           ideas into real-world applications.
         </p>
 
+        {/* Education */}
+          <Section title="Education">
+            <div className="flex items-start gap-2 py-7 max-md:px-4">
+              <Image
+                src="/images/cvsu.webp"
+                alt="cvsu logo"
+                width={50}
+                height={100}
+              />
+              <div className="inline-grid space-y-2 max-md:text-sm">
+                <span className="font-semibold md:text-lg">
+                  Cavite State University - Naic Campus
+                </span>
+                <span>Bachelor&apos;s degree, Information Technology</span>
+                <span>Sep 2019 - Feb 2024</span>
+                <span>GPA: 1.63</span>
+              </div>
+            </div>
+          </Section>
+
         <div className="flex flex-col gap-12">
           {/* Experience */}
           <Section title="Experience">
@@ -107,8 +127,7 @@ const About = () => (
 
           {/* Technical Skills */}
           <Section title="Technical Skills">
-            <div className="inline-grid space-y-8 bg-gray-200 dark:bg-[#151515] 
-            ring ring-gray-400 dark:ring-[#252525] px-5 py-7 md:rounded-xl -mt-7">
+            <div className="inline-grid space-y-8 py-7 md:rounded-xl -mt-7">
               {technicalSkills.map((group) => (
                 <div key={group.category} className="inline-grid space-y-2">
                   <span className="font-medium md:text-lg">
@@ -136,32 +155,10 @@ const About = () => (
             </div>
           </Section>
 
-          {/* Education */}
-          <Section title="Education">
-            <div className="flex items-start gap-2 -mt-7 max-md:px-4">
-              <Image
-                src="/images/cvsu.webp"
-                alt="cvsu logo"
-                width={50}
-                height={100}
-              />
-              <div className="inline-grid space-y-2 max-md:text-sm">
-                <span className="font-semibold md:text-lg">
-                  Cavite State University - Naic Campus
-                </span>
-                <span>Bachelor&apos;s degree, Information Technology</span>
-                <span>Sep 2019 - Feb 2024</span>
-                <span>GPA: 1.63</span>
-              </div>
-            </div>
-          </Section>
-
           {/* Certification */}
           <Section title="Certifications">
             {/* import certificates */}
-            <div className="inline-grid bg-gray-200 dark:bg-[#151515] 
-            ring ring-gray-400 dark:ring-[#252525] pt-5 md:rounded-xl -mt-7">
-              <div className="px-5">
+            <div className="inline-grid pt-5 md:rounded-xl -mt-7">
                 {/* import certificates */}
                 {slicedCertificateArray.map((cert) => (
                   <div key={cert.name}>
@@ -175,13 +172,11 @@ const About = () => (
                       skills={cert.skills}
                       description={cert.description}
                     />
-                    <hr className="mt-5 text-[#252525]" />
                   </div>
                 ))}
-              </div>
               <Link
                 href="/certificates"
-                className="text-center hover:underline py-3 font-medium md:rounded-b-lg
+                className="text-center hover:underline mt-7 text-blue-500 font-medium md:rounded-b-lg
                 active:scale-95"
               >
                 Show all {certificates.length} certifications{" "}

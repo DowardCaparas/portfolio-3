@@ -13,8 +13,8 @@ const ResumeButton = () => {
       onClick={() => openNewWindow("/files/Dounhuward_Caparas_Resume.pdf")}
       aria-label="open Dounhuward Caparas resume in new window"
         className="flex items-center gap-2 text-center p-2 cursor-pointer rounded-md
-    dark:bg-black bg-[#333] hover:opacity-80 text-white active:scale-95 shadow-md ring-2 
-    dark:ring-[#333] ring-black hover:scale-102"
+    dark:bg-[#313131] bg-white transition ring ring-gray-500 dark:ring-[#424242] active:scale-95 shadow-md
+      hover:scale-102"
     >
       <File size={18}/>
       <span className="text-center text-sm font-medium">Resume</span>

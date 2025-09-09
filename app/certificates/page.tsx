@@ -9,7 +9,7 @@ const Certificates = () => {
       <span className="md:text-lg">
         I earned all of these certificates from free online courses.
       </span>
-      <div className="mt-20 px-5">
+      <div className="mt-20 px-5 grid">
         {/* import certificates */}
         {certificates.map((cert) => (
           <div key={cert.name}>
@@ -23,7 +23,6 @@ const Certificates = () => {
               skills={cert.skills}
               description={cert.description}
             />
-            <hr className="mt-5 text-[#252525]" />
           </div>
         ))}
       </div>
