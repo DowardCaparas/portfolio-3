@@ -321,7 +321,7 @@ export const technicalSkills: TechnicalSkills[] = [
       { name: "Node.js", icon: "/techstacks/nodejs.svg" },
       {
         name: "REST API",
-        icon: "https://img.icons8.com/ios-filled/50/ffffff/api.png",
+        icon: "https://img.icons8.com/ios-filled/50/000/api.png",
       },
       {
         name: "PostgreSQL",

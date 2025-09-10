@@ -17,7 +17,7 @@ const ResumeButton = () => {
       hover:scale-102"
     >
       <File size={18}/>
-      <span className="text-center text-sm font-medium">Resume</span>
+      <span className="text-center text-sm font-bold">Resume</span>
     </button>
   );
 };

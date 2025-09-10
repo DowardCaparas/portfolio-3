@@ -137,16 +137,17 @@ const About = () => (
                     {group.skills.map((tech) => (
                       <div
                         key={tech.name}
-                        className="flex items-center gap-2 bg-[#222222] 
-                        p-4 rounded-xl text-white"
+                        className="flex items-center gap-2 dark:bg-[#222222] 
+                        p-2 rounded-md bg-white"
                       >
                         <Image
                           src={tech.icon}
                           alt={tech.name}
-                          width={25}
-                          height={25}
+                          width={20}
+                          height={20}
+                          className=""
                         />
-                        <span className="text-sm">{tech.name}</span>
+                        <span className="text-sm font-medium">{tech.name}</span>
                       </div>
                     ))}
                   </div>
