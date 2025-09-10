@@ -13,13 +13,13 @@ const ProjectCard = ({
 }: ProjectCardTypes) => {
   return (
     <div className="flex flex-col dark:bg-[#313131] bg-white transition ring ring-gray-500 dark:ring-[#424242] rounded-xl">
-      <div className="h-50 bg-gray-300 dark:bg-[#515151] rounded-t-xl">
+      <div className="bg-gray-300 dark:bg-[#515151] rounded-t-xl">
         <Image
           src={image}
           alt={name}
           width={500}
           height={600}
-          className="w-full rounded-t-xl h-full object-contain"
+          className="w-full h-50 rounded-t-xl object-contain"
           quality={100}
         />
       </div>

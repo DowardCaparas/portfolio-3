@@ -18,7 +18,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="max-w-[1440px] mx-auto">
-      <body className={`${montserrat.className} antialiased dark:bg-[#0a0a0a] bg-gray-50 dark:text-white`}>
+      <body className={`${montserrat.className} antialiased dark:bg-[#0a0a0a] bg-gray-50 dark:text-white
+      `}>
         <NavBar />
         <div className="fixed inset-0 -z-10 flex items-center justify-center">
           <div className="h-[600px] w-[600px] rounded-full bg-gray-500 dark:bg-green-200 opacity-10 blur-[150px]" />
@@ -41,7 +42,7 @@ export default function RootLayout({
           src="https://www.chatbase.co/embed.min.js"
           strategy="lazyOnload" // Ensures it loads after the page
         />
-         <footer className="py-9 bg-gray-200 dark:bg-[#313131] dark:text-white">
+         <footer className="py-9 mx-0 bottom-0 z-30 right-0 left-0">
         <p className="text-center text-sm">&copy; 2025 Dounhuward B. Caparas All rights reserved.</p>
       </footer>
       </body>
